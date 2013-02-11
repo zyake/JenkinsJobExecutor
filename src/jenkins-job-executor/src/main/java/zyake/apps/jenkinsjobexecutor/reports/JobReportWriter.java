@@ -3,23 +3,13 @@ package zyake.apps.jenkinsjobexecutor.reports;
 import zyake.apps.jenkinsjobexecutor.Job;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * Created with IntelliJ IDEA.
- * User: zyake
- * Date: 13/02/10
- * Time: 14:28
- * To change this template use File | Settings | File Templates.
- */
-public class JobReportWriter {
-    public void initialize() {
-        //To change body of created methods use File | Settings | File Templates.
-    }
+public interface JobReportWriter {
 
-    public void writeJobs(List<Job> jobs) {
-    }
+    void initialize(Map<String, String> props);
 
-    public void finish() {
-        //To change body of created methods use File | Settings | File Templates.
-    }
+    void writeJobs(List<Job> jobs);
+
+    void finish();
 }

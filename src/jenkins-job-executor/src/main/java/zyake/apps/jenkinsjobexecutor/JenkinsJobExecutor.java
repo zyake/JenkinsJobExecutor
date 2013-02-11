@@ -10,10 +10,11 @@ import zyake.apps.jenkinsjobexecutor.reports.JobReportWriter;
 import zyake.apps.jenkinsjobexecutor.reports.JobReportWriterFactory;
 import zyake.apps.jenkinsjobexecutor.senders.JobRequestSender;
 import zyake.apps.jenkinsjobexecutor.senders.JobRequestSenderFactory;
-import zyake.apps.jenkinsjobexecutor.serializers.JobResultSerializer;
-import zyake.apps.jenkinsjobexecutor.serializers.JobResultSerializerFactory;
+import zyake.apps.jenkinsjobexecutor.serializers.JobSerializer;
+import zyake.apps.jenkinsjobexecutor.serializers.JobSerializerFactory;
 import zyake.apps.jenkinsjobexecutor.util.ClassUtils;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
@@ -30,7 +31,7 @@ public class JenkinsJobExecutor {
 
     private JobRequestSender sender;
 
-    private JobResultSerializer serializer;
+    private JobSerializer serializer;
 
     private JobReportWriter reportWriter;
 
@@ -56,15 +57,12 @@ public class JenkinsJobExecutor {
             LOGGER.info("start execution...");
         }
 
-        serializer.initialize();
-        reportWriter.initialize();
-
         List<Job> jobs = loader.loadJobs(parsedArgs.get("url").getSingleValue());
         for ( Job job : jobs ) {
             sender.disableJob(job);
         }
 
-        Stack<String> executionPath = new Stack<String>();
+        Stack<String> executionPath = new Stack<>();
         try {
             for ( Job job : jobs ) {
                 doExecute(job, executionPath);
@@ -90,6 +88,7 @@ public class JenkinsJobExecutor {
     }
 
     private void doExecute(Job job, Stack<String> executionPath) {
+        executionPath.push(job.getName());
         for ( Job depJob :  job.getDependencies() ) {
             if ( depJob.isCompleted() ) {
                 if ( LOGGER.isLoggable(Level.FINE) ) {
@@ -114,6 +113,7 @@ public class JenkinsJobExecutor {
             return;
         }
 
+        executionPath.pop();
         int retryCount = config.getRetryCount();
         while ( retryCount > 0 ) {
             try {
@@ -143,7 +143,7 @@ public class JenkinsJobExecutor {
 
         ArgumentParser parser = ClassUtils.newInstance(config.getParser());
         JobRequestSenderFactory.configure(config.getRequestSenders());
-        JobResultSerializerFactory.configure(config.getSerializers());
+        JobSerializerFactory.configure(config.getSerializers());
         JobReportWriterFactory.configure(config.getReportWriters());
         JobLoaderFactory.configure(config.getLoaders());
 
@@ -153,10 +153,10 @@ public class JenkinsJobExecutor {
             LOGGER.fine("arguments=" + parsedArgs);
         }
 
-        sender = JobRequestSenderFactory.newInstance(parsedArgs.get("sender").getSingleValue());
-        serializer = JobResultSerializerFactory.newInstance(parsedArgs.get("serializer").getSingleValue());
-        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getSingleValue());
-        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getSingleValue());
+        sender = JobRequestSenderFactory.newInstance((String) parsedArgs.get("sender").getSingleValue(), new HashMap<String, String>());
+        serializer = JobSerializerFactory.newInstance(parsedArgs.get("serializer").getSingleValue(), new HashMap<String, String>());
+        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getSingleValue(), new HashMap<String, String>());
+        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getSingleValue(), new HashMap<String, String>());
 
         if ( LOGGER.isLoggable(Level.FINE) ) {
             LOGGER.fine("end configuring.");
