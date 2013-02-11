@@ -9,13 +9,13 @@ public class DefaultExecutorConfig implements ExecutorConfig {
 
     private String parser;
 
-    private Map<String, String> requestSenders = new HashMap<String, String>();
+    private Map<String, String> requestSenders = new HashMap<>();
 
-    private Map<String, String> serializers  = new HashMap<String, String>();
+    private Map<String, String> serializers  = new HashMap<>();
 
-    private Map<String, String> reportWriters  = new HashMap<String, String>();
+    private Map<String, String> reportWriters  = new HashMap<>();
 
-    private Map<String, String> loaders  = new HashMap<String, String>();
+    private Map<String, String> loaders  = new HashMap<>();
 
     @Override
     public String getParser() {
@@ -54,5 +54,12 @@ public class DefaultExecutorConfig implements ExecutorConfig {
 
     public void setRetryCount(int retryCount) {
         this.retryCount = retryCount;
+    }
+
+    @Override
+    public String toString() {
+        return "parser=" + parser + ", retry count=" + retryCount +
+                ", senders=" + requestSenders + ", serializers=" + serializers +
+                ", writers=" + reportWriters + ", loaders=" + loaders;
     }
 }

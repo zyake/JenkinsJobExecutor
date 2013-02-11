@@ -14,16 +14,21 @@ import zyake.apps.jenkinsjobexecutor.serializers.JobSerializer;
 import zyake.apps.jenkinsjobexecutor.serializers.JobSerializerFactory;
 import zyake.apps.jenkinsjobexecutor.util.ClassUtils;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 import java.util.logging.Level;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class JenkinsJobExecutor {
 
     private static final String CONFIG_PATH = "config.properties";
+
+    private static final String LOG_CONFIG_PATH = "log.properties";
 
     private static final Logger LOGGER = Logger.getLogger(JenkinsJobExecutor.class.getName());
 
@@ -44,6 +49,7 @@ public class JenkinsJobExecutor {
     }
 
     public void execute(String[] args) {
+        configureLog();
         configure(args);
         if ( parsedArgs.containsKey("retry")) {
             System.out.println("retry...");
@@ -52,12 +58,21 @@ public class JenkinsJobExecutor {
         }
     }
 
+    private void configureLog() {
+        InputStream inputStream = JenkinsJobExecutor.class.getClassLoader().getResourceAsStream(LOG_CONFIG_PATH);
+        try {
+            LogManager.getLogManager().readConfiguration(inputStream);
+        } catch (IOException e) {
+            throw new ExecutorException("log config failed", e);
+        }
+    }
+
     private void execute() {
         if ( LOGGER.isLoggable(Level.INFO) ) {
             LOGGER.info("start execution...");
         }
 
-        List<Job> jobs = loader.loadJobs(parsedArgs.get("url").getSingleValue());
+        List<Job> jobs = loader.loadJobs(parsedArgs.get("url").getValue().toString());
         for ( Job job : jobs ) {
             sender.disableJob(job);
         }
@@ -153,10 +168,10 @@ public class JenkinsJobExecutor {
             LOGGER.fine("arguments=" + parsedArgs);
         }
 
-        sender = JobRequestSenderFactory.newInstance((String) parsedArgs.get("sender").getSingleValue(), new HashMap<String, String>());
-        serializer = JobSerializerFactory.newInstance(parsedArgs.get("serializer").getSingleValue(), new HashMap<String, String>());
-        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getSingleValue(), new HashMap<String, String>());
-        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getSingleValue(), new HashMap<String, String>());
+        sender = JobRequestSenderFactory.newInstance((String) parsedArgs.get("sender").getValue(), new HashMap<String, String>());
+        serializer = JobSerializerFactory.newInstance(parsedArgs.get("serializer").getValue().toString(), new HashMap<String, String>());
+        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getValue().toString(), new HashMap<String, String>());
+        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getValue().toString(), new HashMap<String, String>());
 
         if ( LOGGER.isLoggable(Level.FINE) ) {
             LOGGER.fine("end configuring.");

@@ -45,9 +45,9 @@ public class ConfigLoader {
             return;
         }
 
-        boolean isRequestSender = name.startsWith("executor.requestsenders.");
+        boolean isRequestSender = name.startsWith("executor.senders.");
         if ( isRequestSender ) {
-            String senderName = name.substring("executor.requestsenders.".length());
+            String senderName = name.substring("executor.senders.".length());
             config.getRequestSenders().put(senderName, property);
             return;
         }
@@ -59,9 +59,9 @@ public class ConfigLoader {
             return;
         }
 
-        boolean isWriter = name.startsWith("executor.reportwriters.");
+        boolean isWriter = name.startsWith("executor.reports.");
         if ( isWriter ) {
-            String writerName = name.substring("executor.reportwriters.".length());
+            String writerName = name.substring("executor.reports.".length());
             config.getReportWriters().put(writerName, property);
             return;
         }

@@ -4,7 +4,7 @@ import zyake.apps.jenkinsjobexecutor.Job;
 
 import java.util.Map;
 
-public class NullJobSerializer implements JobSerializer {
+public class NullSerializer implements JobSerializer {
     @Override
     public void initialize(Map<String, String> props) {
         //To change body of implemented methods use File | Settings | File Templates.
