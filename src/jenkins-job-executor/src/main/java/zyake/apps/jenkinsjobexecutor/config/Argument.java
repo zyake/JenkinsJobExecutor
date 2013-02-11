@@ -21,6 +21,7 @@ public class Argument {
 
     public Argument(String key, List<String> values) {
         this.key = key;
+        this.value = values.size() > 0 ? values.get(0) : "";
         this.values = Collections.unmodifiableList(new ArrayList<>(values));
     }
 

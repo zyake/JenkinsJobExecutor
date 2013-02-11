@@ -15,7 +15,7 @@ public enum ValueValidators {
         return validator;
     }
 
-    public ValueValidator asSelection(String... selections) {
+    public static ValueValidator asSelection(String... selections) {
         return new SelectValidator(selections);
     }
 }

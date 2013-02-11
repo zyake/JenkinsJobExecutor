@@ -1,6 +1,7 @@
 package zyake.apps.jenkinsjobexecutor.config.rules;
 
 import zyake.apps.jenkinsjobexecutor.config.rules.validation.ValueCounts;
+import zyake.apps.jenkinsjobexecutor.config.rules.validation.ValueValidator;
 import zyake.apps.jenkinsjobexecutor.config.rules.validation.ValueValidators;
 
 import java.util.ArrayList;
@@ -24,6 +25,12 @@ public class ParserRuleBuilder {
 
     public ParserRuleBuilder optional(String arg, ValueCounts counts, ValueValidators validators, String... defaultValues) {
         rules.add(new OptionalRule(arg, validators.getValidator(), counts.getCounter(), defaultValues));
+
+        return this;
+    }
+
+    public ParserRuleBuilder optional(String arg, ValueCounts counts, ValueValidator validator, String... defaultValues) {
+        rules.add(new OptionalRule(arg, validator, counts.getCounter(), defaultValues));
 
         return this;
     }

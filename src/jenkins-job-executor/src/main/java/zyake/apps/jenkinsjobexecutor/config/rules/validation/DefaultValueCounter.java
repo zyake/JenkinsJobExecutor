@@ -12,10 +12,10 @@ public class DefaultValueCounter implements ValueCounter {
     public boolean checkCount(int size) {
         boolean result;
         if ( count < 0 ) {
-            return count > 0;
+            return size > 0;
         }
 
-        return  this.count == count;
+        return count == size;
     }
 
     @Override

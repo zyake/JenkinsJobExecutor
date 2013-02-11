@@ -4,6 +4,10 @@ import zyake.apps.jenkinsjobexecutor.config.Argument;
 import zyake.apps.jenkinsjobexecutor.config.ArgumentParser;
 import zyake.apps.jenkinsjobexecutor.config.ConfigLoader;
 import zyake.apps.jenkinsjobexecutor.config.ExecutorConfig;
+import zyake.apps.jenkinsjobexecutor.config.rules.ParserRule;
+import zyake.apps.jenkinsjobexecutor.config.rules.ParserRuleBuilder;
+import zyake.apps.jenkinsjobexecutor.config.rules.validation.ValueCounts;
+import zyake.apps.jenkinsjobexecutor.config.rules.validation.ValueValidators;
 import zyake.apps.jenkinsjobexecutor.loaders.JobLoader;
 import zyake.apps.jenkinsjobexecutor.loaders.JobLoaderFactory;
 import zyake.apps.jenkinsjobexecutor.reports.JobReportWriter;
@@ -137,7 +141,8 @@ public class JenkinsJobExecutor {
                 return;
             } catch (Exception ex) {
                 if ( LOGGER.isLoggable(Level.SEVERE) ) {
-                    LOGGER.log(Level.SEVERE, "job execution failed. retrying... job=" + job +", exception="  + ex);
+                    LOGGER.log(Level.SEVERE,
+                            "job execution failed. retrying... job=" + job +", exception="  + ex);
                 }
                 retryCount --;
             }
@@ -156,22 +161,37 @@ public class JenkinsJobExecutor {
             LOGGER.fine("configure=" + config);
         }
 
+        ParserRule parserRule = new ParserRuleBuilder()
+                .require("url", ValueCounts.Once, ValueValidators.Url)
+                .require("name", ValueCounts.Once, ValueValidators.Any)
+                .optional("output", ValueCounts.Once, ValueValidators.asSelection("stdout", "text", "csv", "html", "xml"), "stdout")
+                .optional("include", ValueCounts.Many, ValueValidators.Regex)
+                .optional("exclude", ValueCounts.Many, ValueValidators.Regex)
+                .optional("all", ValueCounts.NoValue, ValueValidators.NoValue)
+                .optional("view", ValueCounts.Many, ValueValidators.Any)
+                .optional("job", ValueCounts.Many, ValueValidators.Any)
+                .optional("sender", ValueCounts.Once, ValueValidators.Any, "null")
+                .optional("serializer", ValueCounts.Once, ValueValidators.Any, "null")
+                .optional("loader", ValueCounts.Once, ValueValidators.Any, "null")
+                .select("all", "view", "job")
+                .build();
+
         ArgumentParser parser = ClassUtils.newInstance(config.getParser());
         JobRequestSenderFactory.configure(config.getRequestSenders());
         JobSerializerFactory.configure(config.getSerializers());
         JobReportWriterFactory.configure(config.getReportWriters());
         JobLoaderFactory.configure(config.getLoaders());
 
-        parsedArgs = parser.parse(args);
+        parsedArgs = parser.parse(args, parserRule);
 
         if ( LOGGER.isLoggable(Level.FINE) ) {
             LOGGER.fine("arguments=" + parsedArgs);
         }
 
-        sender = JobRequestSenderFactory.newInstance((String) parsedArgs.get("sender").getValue(), new HashMap<String, String>());
-        serializer = JobSerializerFactory.newInstance(parsedArgs.get("serializer").getValue().toString(), new HashMap<String, String>());
-        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getValue().toString(), new HashMap<String, String>());
-        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getValue().toString(), new HashMap<String, String>());
+        sender = JobRequestSenderFactory.newInstance(parsedArgs.get("sender").getValue(), new HashMap<String, String>());
+        serializer = JobSerializerFactory.newInstance(parsedArgs.get("serializer").getValue(), new HashMap<String, String>());
+        reportWriter = JobReportWriterFactory.newInstance(parsedArgs.get("output").getValue(), new HashMap<String, String>());
+        loader = JobLoaderFactory.newInstance(parsedArgs.get("loader").getValue(), new HashMap<String, String>());
 
         if ( LOGGER.isLoggable(Level.FINE) ) {
             LOGGER.fine("end configuring.");
