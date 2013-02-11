@@ -29,6 +29,9 @@
         <module name="jenkins-job-executor" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jenkins-job-executor" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 

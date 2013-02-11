@@ -10,11 +10,11 @@ public class ArgumentParser {
 
     public Map<String, Argument> parse(String[] args) {
         Map<String, Argument> argMap = new HashMap<String, Argument>();
-        argMap.put("url", new Argument("hoge"));
-        argMap.put("sender", new Argument("null"));
-        argMap.put("serializer", new Argument("null"));
-        argMap.put("output", new Argument("stdout"));
-        argMap.put("loader", new Argument("null"));
+        argMap.put("url", new Argument("hoge", ""));
+        argMap.put("sender", new Argument("null", ""));
+        argMap.put("serializer", new Argument("null", ""));
+        argMap.put("output", new Argument("stdout", ""));
+        argMap.put("loader", new Argument("null", ""));
 
         return argMap;
     }
