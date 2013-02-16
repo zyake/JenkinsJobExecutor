@@ -2,33 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParserTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java" />
-      <change type="MOVED" beforePath="C:\Users\zyake\Documents\GitHub\JenkinsJobExecutor\src\jenkins-job-executor\src\main\java\zyake\apps\jenkinsjobexecutor\config\ArgumentParser.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ArgumentParserMock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/Argument.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/Argument.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ArgumentParser.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ArgumentParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ConfigException.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ConfigException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/DefaultValueCounter.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/DefaultValueCounter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/ValueValidators.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/ValueValidators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicateTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/util/Predicate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoader.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/NullLoader.java" afterPath="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/NullLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jenkins-job-executor.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/JenkinsJobExecutor.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360576600206" ignored="false" />
-    <file path="/fragment.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360581000944" ignored="false" />
+    <file path="/fragment.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361020344991" ignored="false" />
     <file path="/ConfigLoader.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360478464998" ignored="false" />
     <file path="/ClassUtils.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360549444019" ignored="false" />
     <file path="/JobRequestSenderFactory.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360549563905" ignored="false" />
     <file path="/JobResultSerializerFactory.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360551670683" ignored="false" />
     <file path="/JobReportWriterFactory.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360550466552" ignored="false" />
-    <file path="/JobLoaderFactory.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360552876399" ignored="false" />
+    <file path="/JobLoaderFactory.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361006900119" ignored="false" />
     <file path="/ArgumentParser.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360575206530" ignored="false" />
     <file path="/ExecutorConfig.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360477026790" ignored="false" />
-    <file path="/JobLoader.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360553499914" ignored="false" />
+    <file path="/JobLoader.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361019124059" ignored="false" />
     <file path="/Job.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360550026452" ignored="false" />
     <file path="/ExecutorException.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360556166042" ignored="false" />
     <file path="/JobRequestSender.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360546560972" ignored="false" />
@@ -40,7 +34,7 @@
     <file path="/Argument.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360582241203" ignored="false" />
     <file path="/config.properties" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360580897701" ignored="false" />
     <file path="/pom.xml" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360568008803" ignored="false" />
-    <file path="/Dummy.txt" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360572000611" ignored="false" />
+    <file path="/Dummy.txt" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361018453590" ignored="false" />
     <file path="/JenkinsCliRequestSender.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360545372248" ignored="false" />
     <file path="/SenderException.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360545705314" ignored="false" />
     <file path="/SerializerException.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360552549356" ignored="false" />
@@ -93,6 +87,10 @@
     <file path="$PROJECT_DIR$/../../../SandBox/src/test/java/InterpreterTest.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360573262074" ignored="false" />
     <file path="/InterpreterTest.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360572860212" ignored="false" />
     <file path="/DefaultArgumentParserTest.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1360575042450" ignored="false" />
+    <file path="/JobTypes.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361018622025" ignored="false" />
+    <file path="/Predicate.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361019101045" ignored="false" />
+    <file path="/DefaultJobPredicate.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361020415109" ignored="false" />
+    <file path="/DefaultJobPredicateTest.java" changelist="b33266b3-6bcc-4eb0-bc0e-d0f938e4a0bb" time="1361020521076" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,42 +105,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java" line="9" class="zyake.apps.jenkinsjobexecutor.JenkinsJobExecutorTest" package="zyake.apps.jenkinsjobexecutor">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -186,6 +149,41 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -198,16 +196,25 @@
       <file leaf-file-name="JenkinsJobExecutor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="81" selection-start="6990" selection-end="6990" vertical-scroll-proportion="0.0">
+            <state line="46" column="27" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultArgumentParserTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParserTest.java">
+      <file leaf-file-name="JobLoader.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="324" selection-end="471" vertical-scroll-proportion="0.35772356">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultJobPredicate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -215,10 +222,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OptionalRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/OptionalRule.java">
+      <file leaf-file-name="DefaultJobPredicateTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0">
+            <state line="40" column="33" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -226,57 +233,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CompositeRule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/CompositeRule.java">
+      <file leaf-file-name="JobLoaderFactoryTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="108" column="12" selection-start="3697" selection-end="3788" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultArgumentParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParser.java">
+      <file leaf-file-name="NullLoader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/NullLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="8" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserRuleBuilder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilder.java">
+      <file leaf-file-name="Predicate.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/util/Predicate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Argument.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/Argument.java">
+      <file leaf-file-name="Job.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/Job.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="59" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JobRequestSenderFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/senders/JobRequestSenderFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -284,16 +272,16 @@
       <file leaf-file-name="config.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="6" column="9" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JenkinsJobExecutorTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java">
+      <file leaf-file-name="JobLoaderFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="33" selection-start="193" selection-end="193" vertical-scroll-proportion="0.6168224">
+            <state line="9" column="99" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -317,14 +305,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/OptionalRule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/SelectRule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ArgumentParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ConfigException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/ArgumentParserMock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/ValueValidators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/CompositeRule.java" />
@@ -333,6 +313,14 @@
         <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/DefaultValueCounter.java" />
         <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/Argument.java" />
         <option value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/util/Predicate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/NullLoader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicate.java" />
+        <option value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicateTest.java" />
       </list>
     </option>
   </component>
@@ -415,8 +403,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -903,13 +889,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkins-job-executor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkins-job-executor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkinsjobexecutor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkins-job-executor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkins-job-executor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jenkinsjobexecutor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="OverrideImplement.combined" value="false" />
@@ -926,15 +986,15 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="zyake.apps.jenkinsjobexecutor.loaders" />
       <recent name="zyake.apps.jenkinsjobexecutor" />
       <recent name="zyake.apps.jenkinsjobexecutor.config" />
       <recent name="zyake.apps.jenkinsjobexecutor.config.rules" />
-      <recent name="zyake.apps.jenkinsjobexecutor.loaders" />
       <recent name="zyake.apps.jenkinsjobexecutor.serializers" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="zyake.apps.jenkinsjobexecutor.config" />
@@ -949,61 +1009,23 @@
       <recent name="zyake.apps.jenkinsjobexecutor.util" />
       <recent name="zyake.apps.jenkinsjobexecutor.serializers" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="zyake.apps.jenkinsjobexecutor.serializers" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zyake\Documents\GitHub\JenkinsJobExecutor\src\jenkins-job-executor\src\main\resources" />
       <recent name="C:\Users\zyake\Documents\GitHub\JenkinsJobExecutor\src\jenkins-job-executor\src\main\java" />
       <recent name="C:\Users\zyake\Documents\GitHub\JenkinsJobExecutor\src\jenkins-job-executor\src\main\java\zyake\apps\jenkinsjobexecutor" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="zyake.apps.jenkinsjobexecutor.serializers" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.zyake.apps.jenkinsjobexecutor in jenkins-job-executor">
-    <configuration default="false" name="DefaultArgumentParserTest" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.All in jenkins-job-executor">
+    <configuration default="false" name="DefaultJobPredicateTest.testPredicate_normal_noFilter" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jenkins-job-executor" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor.config" />
-      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.config.DefaultArgumentParserTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JenkinsJobExecutor" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.JenkinsJobExecutor" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="jenkins-job-executor" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="JenkinsJobExecutorTest.testMain" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="jenkins-job-executor" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor" />
-      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.JenkinsJobExecutorTest" />
-      <option name="METHOD_NAME" value="testMain" />
+      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor.loaders" />
+      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.loaders.DefaultJobPredicateTest" />
+      <option name="METHOD_NAME" value="testPredicate_normal_noFilter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1015,24 +1037,18 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JenkinsJobExecutorTest" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="DefaultJobPredicateTest.testPredicate_normal_exclude" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jenkins-job-executor" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor" />
-      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.JenkinsJobExecutorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor.loaders" />
+      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.loaders.DefaultJobPredicateTest" />
+      <option name="METHOD_NAME" value="testPredicate_normal_exclude" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1043,21 +1059,59 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="zyake.apps.jenkinsjobexecutor in jenkins-job-executor" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="DefaultJobPredicateTest.testPredicate_normal_includeAndExclude" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jenkins-job-executor" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor" />
+      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor.loaders" />
+      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.loaders.DefaultJobPredicateTest" />
+      <option name="METHOD_NAME" value="testPredicate_normal_includeAndExclude" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DefaultJobPredicateTest.testPredicate_normal_targetAndExclude" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="jenkins-job-executor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="zyake.apps.jenkinsjobexecutor.loaders" />
+      <option name="MAIN_CLASS_NAME" value="zyake.apps.jenkinsjobexecutor.loaders.DefaultJobPredicateTest" />
+      <option name="METHOD_NAME" value="testPredicate_normal_targetAndExclude" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in jenkins-job-executor" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="jenkins-job-executor" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
@@ -1110,6 +1164,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1135,19 +1202,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1185,19 +1239,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultArgumentParserTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.JenkinsJobExecutor" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.JenkinsJobExecutorTest.testMain" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.JenkinsJobExecutorTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.zyake.apps.jenkinsjobexecutor in jenkins-job-executor" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_noFilter" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_exclude" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_includeAndExclude" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_targetAndExclude" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in jenkins-job-executor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.zyake.apps.jenkinsjobexecutor in jenkins-job-executor" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.JenkinsJobExecutorTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.JenkinsJobExecutor" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultArgumentParserTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.JenkinsJobExecutorTest.testMain" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in jenkins-job-executor" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_targetAndExclude" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_includeAndExclude" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_exclude" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DefaultJobPredicateTest.testPredicate_normal_noFilter" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1255,18 +1309,21 @@
       <created>1360572009936</created>
       <updated>1360572009936</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="結合時に上手く動作しない問題を修正">
+      <created>1360582315837</created>
+      <updated>1360582315837</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="776" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="776" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852563" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34615386" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1275,15 +1332,16 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2881997" sideWeight="0.67147434" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.037821483" sideWeight="0.66346157" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24659607" sideWeight="0.67147434" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.66346157" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33653846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30786687" sideWeight="0.66346157" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33653846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.66346157" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1324,7 +1382,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="パーサルールビルダまで作成" />
+    <option name="LAST_COMMIT_MESSAGE" value="結合時に上手く動作しない問題を修正" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1340,6 +1398,7 @@
     <MESSAGE value="インスタンス生成ファクトリの実装" />
     <MESSAGE value="ハリボテを動くように修正" />
     <MESSAGE value="パーサルールビルダまで作成" />
+    <MESSAGE value="結合時に上手く動作しない問題を修正" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1349,107 +1408,23 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="486" column="0" selection-start="18380" selection-end="18380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="606" column="0" selection-start="24429" selection-end="24429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/RequireRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="54" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/validation/DefaultValueCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/senders/NullRequestSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/senders/JobRequestSenderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/ParserRuleBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/OptionalRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/rules/CompositeRule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="0" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="81" selection-start="6990" selection-end="6990" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1457,24 +1432,94 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/config/DefaultArgumentParserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/config/Argument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="59" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="5" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="99" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="27" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/util/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/NullLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoaderFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="12" selection-start="3697" selection-end="3788" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="33" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/zyake/apps/jenkinsjobexecutor/JenkinsJobExecutorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/DefaultJobPredicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="193" selection-end="193" vertical-scroll-proportion="0.6168224">
+        <state line="23" column="13" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zyake/apps/jenkinsjobexecutor/loaders/JobLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="324" selection-end="471" vertical-scroll-proportion="0.35772356">
           <folding />
         </state>
       </provider>

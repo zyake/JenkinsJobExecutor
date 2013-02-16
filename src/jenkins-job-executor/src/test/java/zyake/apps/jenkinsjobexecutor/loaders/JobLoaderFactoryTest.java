@@ -3,6 +3,7 @@ package zyake.apps.jenkinsjobexecutor.loaders;
 import org.junit.Before;
 import org.junit.Test;
 import zyake.apps.jenkinsjobexecutor.Job;
+import zyake.apps.jenkinsjobexecutor.util.Predicate;
 
 import java.util.HashMap;
 import java.util.List;
@@ -83,6 +84,12 @@ public class JobLoaderFactoryTest {
         public List<Job> loadJobs(String url) {
             return null;
         }
+
+        @Override
+        public List<Job> loadJobs(String url, Predicate<Job> predicate) {
+            return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+
         @Override
         public void initialize(Map<String, String> props) {
         }
@@ -96,6 +103,12 @@ public class JobLoaderFactoryTest {
         public List<Job> loadJobs(String url) {
             return null;
         }
+
+        @Override
+        public List<Job> loadJobs(String url, Predicate<Job> predicate) {
+            return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+
         @Override
         public void initialize(Map<String, String> props) {
         }
